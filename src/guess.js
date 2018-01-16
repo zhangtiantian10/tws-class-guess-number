@@ -1,12 +1,12 @@
 const CompareNumber = require('./compare-number')
 
 class Guess {
-	constructor(answerGenerator, compareNumber) {
-		this.answerGenerator = answerGenerator
+	constructor(answer, compareNumber) {
+		this.answer = answer
 		this.compareNumber = compareNumber
 	}
 	combine (input) {
-		const answer = this.answerGenerator.getAnswer()
+		const answer = this.answer
 		return this.compareNumber.output(answer, input)
 	}
 }
