@@ -1,5 +1,5 @@
 class CompareNumber {
-	static output(answer, input) {
+	output(answer, input) {
 		const inputs = input.split('')
 		const answers = answer.split('')
 

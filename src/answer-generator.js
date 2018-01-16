@@ -1,5 +1,5 @@
 class AnswerGenerator {
-	static getAnswer() {
+	getAnswer() {
 		const answers = []
 
 		while(answers.length < 4) {

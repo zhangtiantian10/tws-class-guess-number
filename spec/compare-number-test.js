@@ -1,4 +1,5 @@
 const CompareNumber = require('../src/compare-number');
+const compareNumber = new CompareNumber()
 
 describe('CompareNumber', () => {
 	it('answer equal input return 4A0B', () => {
@@ -7,7 +8,7 @@ describe('CompareNumber', () => {
 			answer: '1234',
 			output: '4A0B'
 		};
-		expect(CompareNumber.output(result.answer, result.input)).toEqual(result.output);
+		expect(compareNumber.output(result.answer, result.input)).toEqual(result.output);
 	});
 
 	it('answer not equal input return 0A0B', () => {
@@ -17,7 +18,7 @@ describe('CompareNumber', () => {
 			output: '0A0B'
 		}
 
-		expect(CompareNumber.output(result.answer, result.input)).toEqual(result.output);
+		expect(compareNumber.output(result.answer, result.input)).toEqual(result.output);
 	})
 
 	it('answer not equal input but number is correct return 0A4B', () => {
@@ -27,6 +28,6 @@ describe('CompareNumber', () => {
 			output: '0A4B'
 		}
 
-		expect(CompareNumber.output(result.answer, result.input)).toEqual(result.output);
+		expect(compareNumber.output(result.answer, result.input)).toEqual(result.output);
 	})
 })
